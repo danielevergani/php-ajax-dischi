@@ -6,6 +6,6 @@ header('Content-Type: application/json');
 
 echo json_encode($dischi);
 
+// http://localhost/php-ajax-dischi/partials/api.php 
 ?>
 
-<!-- http://localhost/php-ajax-dischi/partials/api.php -->
