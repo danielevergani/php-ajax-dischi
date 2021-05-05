@@ -6,8 +6,6 @@ include __DIR__ . "/partials/header.php";
 
 ?>
 
-
-    <main>
     <main>
         <!-- selezione genere
         <div class="genre__selection">
@@ -39,7 +37,7 @@ include __DIR__ . "/partials/header.php";
 
         </div>
     </main>
-    </main>
+    
         
     </body>
 </html>
