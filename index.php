@@ -1,24 +1,12 @@
 <?php
 
-include __DIR__ . "/partials/database.php"
+include __DIR__ . "/partials/database.php";
+include __DIR__ . "/partials/header.php";
+
 
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/style.css">
-        <title>dischi</title>
-    </head>
-    <body>
-    <header>
-        <div class="logo__section">
-            <img src="img/download.png" alt="logo">
-        </div>
-    </header>
+
     <main>
     <main>
         <!-- selezione genere
@@ -38,6 +26,16 @@ include __DIR__ . "/partials/database.php"
                 <p class="author">{{album.author}}</p>
                 <p>{{album.year}}</p>
             </div> -->
+
+            <?php foreach($dischi as $disco) :?>
+                <div class="single_album">
+                    <img src="<?php echo $disco["poster"]; ?>" alt="">
+                    <h3 class="title"><?php echo $disco["title"]; ?></h3>
+                    <p class="author"><?php echo $disco["author"]; ?></p>
+                    <p><?php echo $disco["year"]; ?></p>
+                </div>
+
+            <?php endforeach; ?>
 
         </div>
     </main>
